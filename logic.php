@@ -10,6 +10,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 	$words = file('data/words.txt');
 	
 
+
 	if(isset($_POST["include_symbol"])) {
 	$available_symbols = array('!', '@', '#', '$', '%', '&');
 		shuffle($available_symbols);
@@ -20,7 +21,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 		$num = rand(0,9);
 	}
 
-	for ($i=0; $i < $numwords-1 ; $i++) { 
+	for ($i=0; $i < $numwords ; $i++) { 
 	 $rand_num = rand(0, count($words)-1);
 	 $pass_words[$i] = rtrim($words[$rand_num]);
 	}
@@ -34,7 +35,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 	echo '<br>';
 	echo $num;
 	echo '<br>';
-	echo $seperated_words;
+	echo  "$seperated_words $num $sym"; 
 
 
  ?> 

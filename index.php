@@ -29,18 +29,38 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
   </head>
   <body>
   	<div class="container">
+
+        <div class="row">
+          <div class="col-sm-3">
+   
+  </div>
+
+            <div class="col-lg-6 text-center">
     	
-    	<form class="form-signin" role="form" method="POST" action="">
-    		<h2 class="form-signin-heading">xkcd Password Generator</h2>
 
-    		Number of Words: <input type="text" name="number_words"><br>
-			<input type="checkbox" class="form-control" name="include_number"> Include a number?<br>
+    	<form crole="form" method="POST" action="">
+    		<h2>xkcd password generator</h2>
+    		<input type="number" class="form-control" placeholder="number of words to include in your password" name="number_words"><br>
 
-			<input type="checkbox" class="form-control" name="include_symbol"> Include a symbol?<br>
-			<br>
-		
-			<p><button type="submit" class="btn btn-primary">Submit</button></p>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="include_number">
+            include a number?
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="include_symbol">
+            include a symbol?
+          </label>
+        </div>
+			<button type="submit" class="btn btn-primary">Submit</button>
 		</form>
+  </div>
+  <div class="col-sm-3">
+   
+  </div>
+  </div>
   	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
