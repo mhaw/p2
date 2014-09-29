@@ -1,7 +1,7 @@
 body {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #eee;
+  background-color: #6E7B8B;
 }
 
 .form-control {
@@ -12,4 +12,17 @@ body {
 
 input{
    text-align:center;
+}
+
+p {
+  font-size: 32px;
+}
+
+.bg-primary {
+  padding: 5px;
+
+}
+
+select {
+  width: 55px;
 }

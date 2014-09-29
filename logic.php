@@ -6,8 +6,15 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 <?php 
 
 	
-	$numwords = $_POST["number_words"];
+	if(isset($_POST["number_words"])) {
+		$numwords = $_POST["number_words"];
+	}
+	else $numwords = 4;
+
 	$words = file('data/words.txt');
+
+	$sym = '';
+	$num = '';
 	
 	if(isset($_POST["include_symbol"])) {
 	$available_symbols = array('!', '@', '#', '$', '%', '&');
@@ -27,6 +34,11 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 	}
 
 	$seperated_words = implode('-', $pass_words);
+
+	if(isset($_POST["all_upper"])) {
+		$seperated_words = strtoupper($seperated_words);
+	}
+	
 
 	// for testing;
 	echo  $seperated_words.$num.$sym;

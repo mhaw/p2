@@ -3,7 +3,7 @@ error_reporting(E_ALL);       # Report Errors, Warnings, and Notices
 ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 ?>
 
-<?php require('logic.php');?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,11 +35,17 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
    
   </div>
 
-            <div class="col-lg-6 text-center">
+      <div class="col-lg-6 text-center">
     	
+      
 
     	<form crole="form" method="POST" action="">
     		<h2>xkcd password generator</h2>
+
+          <p class="bg-primary"><?php require('logic.php');?></p>
+          <br>
+
+
     		<input type="number" class="form-control" placeholder="number of words to include in your password" name="number_words"><br>
 
         <div class="checkbox">
@@ -54,10 +60,34 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
             include a symbol?
           </label>
         </div>
+         <div class="checkbox">
+          <label>
+            <input type="checkbox" name="all_upper">
+            all uppercase?
+          </label>
+        <div class="select">
+          <label>
+          <select class="form-control">
+            <option value="space">  space</option>
+            <option value="underscore">_ underscore</option>
+            <option value="hypen">- hypen</option>
+          </select>
+          seperator type?
+        </label>
+        </div>
+
+        </div>
 			<button type="submit" class="btn btn-primary">Submit</button>
 		</form>
+    <br>
+    <br>
+    <a href="http://xkcd.com/936/"><img src="http://imgs.xkcd.com/comics/password_strength.png"></a>
+
+
   </div>
   <div class="col-sm-3">
+
+
    
   </div>
   </div>
