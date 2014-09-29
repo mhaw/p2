@@ -6,7 +6,7 @@ body {
 
 .form-control {
     min-width: 0;
-    width: 360px;
+    width: 330px;
     display: inline;
 }
 
@@ -14,9 +14,7 @@ input{
    text-align:center;
 }
 
-p {
-  font-size: 32px;
-}
+
 
 .bg-primary {
   padding: 5px;
@@ -24,5 +22,13 @@ p {
 }
 
 select {
-  width: 55px;
+  width:353px;
+  padding:12px;
 }
+
+.intro {
+  text-align: justify;
+  font-size: 24px;
+}
+
+h2

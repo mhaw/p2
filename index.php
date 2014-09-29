@@ -40,8 +40,16 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
       
 
     	<form crole="form" method="POST" action="">
-    		<h2>xkcd password generator</h2>
-
+    		<h1>xkcd password generator</h1>
+          <div class="intro">
+            <p>A simple password generator based on <a href="http://xkcd.com/936/">xKcd's 
+            classic password comic</a>. This generator will construct a password of 
+            random english words. Options include the ability to add a special symbol, 
+            number (1-9), make the password all uppercase, and select the word 
+            separator type. <a href="https://howsecureismypassword.net/">
+            Test your password strength here. </a></p>
+          </div>
+          <br>
           <p class="bg-primary"><?php require('logic.php');?></p>
           <br>
 
@@ -67,13 +75,15 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
           </label>
         <div class="select">
           <label>
-          <select class="form-control">
+            seperator type?
+          </label> <br>
+          <select class="form-control" name="septype">
             <option value="space">  space</option>
             <option value="underscore">_ underscore</option>
             <option value="hypen">- hypen</option>
           </select>
-          seperator type?
-        </label>
+          
+        
         </div>
 
         </div>
