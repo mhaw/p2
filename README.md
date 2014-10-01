@@ -11,16 +11,16 @@ TBD
 
 ## Details
 #####Options include:
-<ul>
-<li><p>Select 1-20 words.</p></li>
-<li><p>Add a symbol.</p></li>
-<li><p>Add a number.</p></li>
-<li><p>Make password uppercase.</p></li>
-<li><p>Select separator type.</p></li>
-</ul>
+
++ Select 1-20 words.
++ Add a symbol.
++ Add a number.
++ Make password uppercase.
++ Select separator type.
+
 
 ## Outside Code
-jQuery <http://jquery.com/>
-BootStrap <http://getbootstrap.com/>
-StartBootStrap Theme <http://startbootstrap.com/templates/portfolio-item/>
-AgileBits (for word list) <https://github.com/atebits/Words>
++ jQuery <http://jquery.com/>
++ BootStrap <http://getbootstrap.com/>
++ StartBootStrap Theme <http://startbootstrap.com/templates/portfolio-item/>
++ AteBits (for word list) <https://github.com/atebits/Words>
