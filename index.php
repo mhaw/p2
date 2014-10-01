@@ -26,7 +26,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
             <div class="col-sm-3"></div>
 
             <div class="col-lg-6 text-center">
-                <form role="form" method="post" action="logic.php">
+                <form role="form" method="post" action="">
                     <h1>xkcd password generator</h1>
 
                     <div class="intro">
