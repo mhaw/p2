@@ -66,6 +66,9 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
                     </div><button type="submit" class="btn btn-primary">Submit</button>
                 </form><br>
                 <br>
+                
+            </div>
+            <div class="text-center">
                 <a href="http://xkcd.com/936/"><img src="http://imgs.xkcd.com/comics/password_strength.png" alt="xkcd comic"></a>
             </div>
 
