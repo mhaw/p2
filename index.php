@@ -1,7 +1,4 @@
-<?php
-error_reporting(E_ALL);       # Report Errors, Warnings, and Notices
-ini_set('display_errors', 1); # Display errors on page (instead of a log file)
-?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -26,7 +23,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
             <div class="col-sm-3"></div>
 
             <div class="col-lg-6 text-center">
-                <form role="form" method="post" action="">
+                <form role="form" method="post" action="index.php">
                     <h1>xkcd password generator</h1>
 
                     <div class="intro">
