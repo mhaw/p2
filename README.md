@@ -7,7 +7,7 @@ Live URL <http://p2.mikehaw.me>
 Simple password generator based on xkcd's password comic. 
 
 ## Demo
-TBD
++ Demo <http://screencast.com/t/dvpPRDRN4>
 
 ## Details
 #####Options include:
